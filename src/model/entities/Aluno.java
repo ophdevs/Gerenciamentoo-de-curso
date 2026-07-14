@@ -1,9 +1,16 @@
 package model.entities;
 
+import model.enums.StatusMatricula;
+import model.enums.TipoUsuario;
+
 import java.sql.SQLOutput;
 
 public class Aluno extends Usuario{
+    private StatusMatricula statusMatricula;
 
+    public Aluno(String name, String user, String password, Matricula matricula, TipoUsuario tipoUsuario) {
+        super(name, user, password, matricula, tipoUsuario);
+    }
 
     @Override
     public void exibirPerfil(){

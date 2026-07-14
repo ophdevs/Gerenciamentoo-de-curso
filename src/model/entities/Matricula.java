@@ -1,9 +1,17 @@
 package model.entities;
 
-import java.time.LocalDateTime;
+import model.enums.StatusMatricula;
+
+import java.time.LocalDate;
 
 public class Matricula {
-    private Integer id;
-    private LocalDateTime dataMatricula;
+    private Aluno aluno;
+    private Curso curso;
+    private LocalDate dataInicio;
+    private LocalDate dataVencimento;
+    private StatusMatricula statusMatricula;
+    private Certificado certificado;
+
+
 
 }
