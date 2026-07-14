@@ -10,5 +10,11 @@ public class Curso implements Avaliavel {
     private ArrayList<Aluno> alunos = new ArrayList<>();
     private ArrayList<Aula> aulas = new ArrayList<>();
 
+    @Override
+    public double  avaliação(){
+        System.out.println("avaliado");
+        return 0;
+    }
+
 
 }

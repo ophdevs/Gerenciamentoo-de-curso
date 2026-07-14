@@ -1,9 +1,11 @@
 package model.entities;
 
+import model.enums.TipoUsuario;
+
 public class Professor extends Usuario {
 
-    public Professor(String name, String user, String password) {
-        super(name, user, password, matricula);
+    public Professor(String name, String user, String password, TipoUsuario tipoUsuario) {
+        super(name, user, password, tipoUsuario);
     }
 
     @Override

@@ -6,23 +6,13 @@ public  abstract class Usuario {
     private String name;
     private String user;
     private String password;
-    private Matricula matricula;
     private TipoUsuario tipoUsuario;
 
-    public Usuario(String name, String user, String password, Matricula matricula, TipoUsuario tipoUsuario) {
+    public Usuario(String name, String user, String password, TipoUsuario tipoUsuario) {
         this.name = name;
         this.user = user;
         this.password = password;
-        this.matricula = matricula;
         this.tipoUsuario = tipoUsuario;
-    }
-
-    public Matricula getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(Matricula matricula) {
-        this.matricula = matricula;
     }
 
     public TipoUsuario getTipoUsuario() {
